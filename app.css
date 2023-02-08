@@ -57,8 +57,16 @@ hr {
     padding: 2em;
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
 img {
     border: 200px, black;
+    display: block;
     gap: 1em;
     margin-top: 2em;
 }
