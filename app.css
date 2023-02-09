@@ -1,12 +1,13 @@
-:root {
-    --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+html {
+    -webkit-text-size-adjust: 100%;
 }
 
-html {
-    color: var(--text-color-dark);
-    font-family: var(--font-family);
-    height: 100%;
-    width: 100%;
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fffaf1;
+    color: #333
+    ;
 }
 
 nav {
@@ -28,10 +29,6 @@ nav a {
     font-size: large;
     color: #f1f1f1;
     line-height: 1.5;
-}
-
-body {
-    margin: 30;
 }
 
 h1 {
@@ -73,8 +70,20 @@ img {
 
 p {
     font-weight: 300;
-    font-size: x-large;
+    font-size: 24px;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 24px;
+    }
 }
 
 .listStyle {
