@@ -10,55 +10,204 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#recipes">Recipes</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
     <header>
-        <img src=""/>
-        <h1>- That curry -</h1>
+        <p class="header-text">COOKBOOK</p>
     </header>
-   
-    <hr/>
+    <section class="nav-container">
+        <ul class="nav-bar">
+            <li><a href="#recipes" class="nav-grid-item">Recipes</a></li>
+            <li><a href="#ingredients" class="nav-grid-item">Ingredients</a></li>
+            <li><a href="#utilities" class="nav-grid-item">Utilities</a></li>
+            <li><a href="#restaurants" class="nav-grid-item">Restaurants</a></li>
+            <li><a href="#blog" class="nav-grid-item">Blog</a></li>
+        </ul>
+        <div></div>
+            <a href="#discover" class="grid-item" id="nav-discover">Discover</a>
+            <a href ="#login" class="grid-item" id="nav-login">Login</a>
+    </section>
 
-    <div class="wrapper">
-            <p>This delectable curry recipe is sure to be a hit with all who try it! The flavorful sauce is created by combining an array of aromatic spices (such as cumin, coriander, garam masala, and turmeric) with creamy coconut milk and rich tomato paste. The end result is an explosion of flavor that will tantalize your taste buds. Serve the curry over cooked basmati rice or with warm naan bread for a complete meal. To add a bit of extra flair, top with freshly chopped cilantro for a pop of flavor and a vibrant color. This dish is sure to become a family favorite and is the perfect way to liven up any dinner table. Bon appetit!</p>
-            <img src="https://images.unsplash.com/photo-1631452180539-96aca7d48617?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="curry1" width="100%"/>
-                <img src="https://images.unsplash.com/photo-1567529854338-fc097b962123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3Vycnl8ZW58MHx8MHx8&auto=format&fit=crop&w=1200&q=60" alt="curry2" width="100%"/>    
-                    <ol class="listStyle">
-                        <li>Heat oil in a large skillet over medium heat.</li>
-                        <li>Add onion and cook until softened, about 5 minutes.</li>
-                        <li>Add garlic and ginger and cook for 1 minute.</li>
-                        <li>Add curry powder, cumin, coriander and cayenne pepper and cook for 1 minute.</li>
-                        <li>Add coconut milk, tomato paste, water, sugar, salt and pepper and bring to a simmer.</li>
-                        <li>Simmer for 10 minutes, stirring occasionally.</li>
-                        <li>Add peas and cilantro and cook for 2 minutes.</li>
-                        <li>Serve over cooked rice or with naan bread.</li>
-                    </ol>
-                        <ul class="listStyle">  
-                    <li>1 onion, diced</li>
-                    <li>2 cloves garlic, minced</li>
-                    <li>1 teaspoon fresh ginger, grated</li>
-                    <li>2 tablespoons curry powder</li>
-                    <li>1 teaspoon ground cumin</li>
-                    <li>1 teaspoon ground coriander</li>
-                    <li>1/4 teaspoon cayenne pepper</li>
-                    <li>1 can (14 oz) coconut milk</li>
-                    <li>2 tablespoons tomato paste</li>
-                    <li>1/4 cup water</li>
-                    <li>1 teaspoon sugar</li>
-                    <li>Salt and pepper, to taste</li>
-                    <li>1/2 cup frozen peas</li>
-                    <li>1/2 cup chopped fresh cilantro</li>
-                    <li>Cooked rice or naan bread, for serving</li>
-                    <li>2 tablespoons vegetable oil</li>
-                        </ul>      
-    </div>
-   
-    
-    
+        <div class="page-wrap">
+            <!-- main doublesection             -->
+            <div class="dbsection">
+                <div class="bg-rose border-right">
+                    <div class="column-padding">
+                        <div class="tablet-centered">
+                            <div class="content-grid">
+                                <h1>That Curry!</h1>
+                                <p>This delectable curry recipe is sure to be a hit with all who try it! The flavorful sauce is created by combining an array of aromatic spices (such as cumin, coriander, garam masala, and turmeric) with creamy coconut milk and rich tomato paste. The end result is an explosion of flavor that will tantalize your taste buds. Serve the curry over cooked basmati rice or with warm naan bread for a complete meal. To add a bit of extra flair, top with freshly chopped cilantro for a pop of flavor and a vibrant color. This dish is sure to become a family favorite and is the perfect way to liven up any dinner table. Bon appetit!</p>
+                                <button class="button1">Reviews!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-yellow">
+                    <div class="column-padding">
+                        <img src="https://images.unsplash.com/photo-1567529854338-fc097b962123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3Vycnl8ZW58MHx8MHx8&auto=format&fit=crop&w=1200&q=60" alt="curry2" width="100%"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main single section -->
+
+            <div class="single-section">
+                <div class="contain-large-centered">
+                    <h1>Ingredients</h1>
+                </div>
+                    <div class="contain-large-centered">
+                        <p class="text-xl">
+                            We all know it's all about the enyzymes, the vitamins and the minerals. Check the table below to dive deeper into the nutrional value of this worldbeating curry!
+                        </p>
+                    </div>
+                    <div class="page-wrap">
+                        <div class="dbsection" id="dbsection2">
+                            <div class="column-padding">
+                                <div class="nut-grid">
+                                    <button class="button2" onclick="showIngredients('onion-nut')">1 onion, diced</button>
+                                        <div id="onion-nut" class="ingredient-nut-table">21 calories, 0.2g fat, 4.7g carbohydrates, 1.1g protein</div>
+                                    <button class="button2" onclick="showIngredients('garlic-nut')">2 cloves garlic, minced</button>
+                                        <div id="garlic-nut" class="ingredient-nut-table">4 calories, 0.2g fat, 0.9g carbohydrates, 0.2g protein</div>
+                                    <button class="button2" onclick="showIngredients('ginger-nut')">1 teaspoon fresh ginger, grated</button>
+                                        <div id="ginger-nut" class="ingredient-nut-table">4 calories, 0.1g fat, 0.8g carbohydrates, 0.1g protein</div>
+                                    <button class="button2" onclick="showIngredients('curry-nut')">2 tablespoons curry powder</button>
+                                        <div id="curry-nut" class="ingredient-nut-table">10 calories, 0.2g fat, 2.2g carbohydrates, 0.7g protein</div>
+                                    <button class="button2" onclick="showIngredients('cumin-nut')">1 teaspoon ground cumin</button>
+                                        <div id="cumin-nut" class="ingredient-nut-table">14 calories, 0.6g fat, 2.3g carbohydrates, 1.3g protein</div>
+                                    <button class="button2" onclick="showIngredients('coriander-nut')">1 teaspoon ground coriander</button>
+                                        <div id="coriander-nut" class="ingredient-nut-table">9 calories, 0.3g fat, 1.8g carbohydrates, 0.9g protein</div>
+                                    <button class="button2" onclick="showIngredients('cayenne-nut')">1/4 teaspoon cayenne peppe</button>
+                                        <div id="cayenne-nut" class="ingredient-nut-table">6 calories, 0.1g fat, 1.5g carbohydrates, 0.4g protein</div>
+                                    <button class="button2" onclick="showIngredients('coco-nut')">1 can (14 oz) coconut milk</button>
+                                        <div id="coco-nut" class="ingredient-nut-table">140 calories, 12.5g fat, 6.8g carbohydrates, 1.7g protein</div>
+                                    <button class="button2" onclick="showIngredients('tomato-nut')">2 tablespoons tomato paste</button>
+                                        <div id="tomato-nut" class="ingredient-nut-table">20 calories, 0.1g fat, 4.4g carbohydrates, 1.4g protein</div>
+                                    <button class="button2" onclick="showIngredients('water-nut')">1/4 cup water</button>
+                                        <div id="water-nut" class="ingredient-nut-table">0 calories, 0g fat, 0g carbohydrates, 0g protein</div>
+                                    <button class="button2" onclick="showIngredients('salt-nut')">Salt and pepper, to taste</button>
+                                        <div id="salt-nut" class="ingredient-nut-table">0 calories, 0g fat, 0g carbohydrates, 0g protein</div>
+                                    <button class="button2" onclick="showIngredients('sugar-nut')">1 teaspoon sugar</button>
+                                        <div id="sugar-nut" class="ingredient-nut-table">17 calories, 0g fat, 4.3g carbohydrates, 0g protein</div>
+                                    <button class="button2" onclick="showIngredients('peas-nut')">1/2 cup frozen peas</button>
+                                        <div id="peas-nut" class="ingredient-nut-table">72 calories, 0.2g fat, 12.3g carbohydrates, 4.7g protein</div>
+                                    <button class="button2" onclick="showIngredients('cilantro-nut')">1/2 cup chopped fresh cilantro</button>
+                                        <div id="cilantro-nut" class="ingredient-nut-table">3 calories, 0.1g fat, 0.5g carbohydrates, 0.2g protein</div>
+                                    <button class="button2" onclick="showIngredients('rice-nut')">Cooked rice or naan bread, for serving</button>
+                                        <div id="rice-nut" class="ingredient-nut-table">3 calories, 0.1g fat, 0.5g carbohydrates, 0.2g protein</div>
+                                    <button class="button2" onclick="showIngredients('oil-nut')">2 tablespoons vegetable oil</button>
+                                        <div id="oil-nut" class="ingredient-nut-table">3 calories, 0.1g fat, 0.5g carbohydrates, 0.2g protein</div>
+                                </div>
+                            </div>
+                            <div class="bg-rose border-right" id="bg-lillac">
+                                    <script>
+                                            function showIngredients(elementId) {
+                                            var x = document.getElementById(elementId);
+                                            if (x.style.display === "none") {
+                                                x.style.display = "block";
+                                            } else {
+                                                x.style.display = "none";
+                                            }
+                                            }
+                                    </script>
+                                        <style>
+                                        .ingredient-nut-table {
+                                        display: none;
+                                        }
+                                        </style>
+                                            <img src="https://images.unsplash.com/photo-1584846786080-99dbf89a744b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80" alt="onion" width="30%" class="img-round"/> 
+                                            <p>a table</p>    
+                                            <table>
+                                                    <tr>
+                                                        <th>cal</th>
+                                                        <th>ss</th>
+                                                        <th>carbs</th>
+                                                        <th>protein</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>21</td>
+                                                        <td>0.2</td>
+                                                        <td>4.7</td>
+                                                        <td>1.1</td>
+                                                    </tr>
+                                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+<!-- how to section -->
+                <div class="dbsection">
+                    <div class="bg-yellow border-right">
+                        <div class="column-padding">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3Vycnl8ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60" alt="curry2" width="100%"/>  
+                        </div> 
+                    </div>
+                    <div class="bg-rose">
+                        <div class="column-padding">
+                            <div class="tablet-centered">
+                                <div class="content-grid">
+                                    <ol class="listStyle">
+                                        <h1>Step by Step</h1>
+                                        <p>4 sevings - cooking time: 40 min</p>
+                                        <li>Heat oil in a large skillet over medium heat.</li>
+                                        <li>Add onion and cook until softened, about 5 minutes.</li>
+                                        <li>Add garlic and ginger and cook for 1 minute.</li>
+                                        <li>Add curry powder, cumin, coriander and cayenne pepper and cook for 1 minute.</li>
+                                        <li>Add coconut milk, tomato paste, water, sugar, salt and pepper and bring to a simmer.</li>
+                                        <li>Simmer for 10 minutes, stirring occasionally.</li>
+                                        <li>Add peas and cilantro and cook for 2 minutes.</li>
+                                        <li>Serve over cooked rice or with naan bread.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- review section -->
+        <div class="single-section">
+            <div class="contain-large-centered">
+                <h1>Reviews</h1>
+            </div>
+                <div class="review-padding">
+                <section class="review-container">
+                    <article class="review-item-1">
+                        <div class="review-name">Charlie C.</div>
+                        <img src=https://nationaltoday.com/wp-content/uploads/2022/02/Nicolas-Cage-Birthday-.jpg width="15%" class="review-img"/>
+                        <div class="review-block">This curry recipe is simply amazing! The delicious sauce is a tantalizing blend of aromatic spices and creamy coconut milk. It's so flavorful and is sure to become a family favorite. Serve it over rice or with naan bread for a complete meal.</div>
+                    </article>
+                    <article class="review-item-2">
+                        <div class="review-name">Medina</div>
+                        <img src=https://media.gq.com/photos/60ecbe1018480638c840cfe8/1:1/w_2607,h_2607,c_limit/NCage2.png width="15%" class="review-img"/>
+                        <div class="review-block">This curry recipe is absolutely delicious! The combination of spices, coconut milk, and tomato paste creates an incredible depth of flavor. The curry is perfect served over basmati rice or with naan bread. I highly recommend it!</div>
+                    </article>   
+                    <article class="review-item-3">
+                        <div class="review-name">Paulie Gualtieri</div>
+                        <img src=https://media.zenfs.com/en/shefinds_255/5663237ed06e456b9f437536bbec9f9d width="15%" class="review-img"/>
+                        <div class="review-block">This curry recipe is absolutely heavenly! The combination of spices, coconut milk, and tomato paste creates a flavor like no other. Serve it over cooked rice or with naan bread for a truly special meal. I highly recommend it!</div>
+                    </article>
+                    <article class="review-item-1">
+                        <div class="review-name">Carmella S</div>
+                        <img src=https://static01.nyt.com/images/2019/08/11/magazine/11mag-talk/11mag-talk-jumbo.jpg width="15%" class="review-img"/>
+                        <div class="review-block">This curry recipe is absolutely delicious! The flavorful sauce is created by combining an array of aromatic spices with creamy coconut milk and rich tomato paste. The end result is an explosion of flavor that will tantalize your taste buds. Highly recommended!</div>
+                    </article>
+                    <article class="review-item-2">Item 5</article>
+                    <article class="review-item-3">Item 6</article>
+                    <article class="review-item-1">Item 7</article>
+                    <article class="review-item-2">Item 8</article>
+                    <article class="review-item-3">Item 9</article>
+                </section>
+                </div>
+        </div>
+
+<!-- footer section -->
+            
+        <section class="footer-container">
+            <ul class="footer-elements">
+                <p class="footer-block">Her står noget om siden, copyright og alt det der. Det kunne f.eks være en adresse, en mail etc. Måske ståer der noget om virksomhedens vision eller.. alt det med småt.</p>
+                <p class="footer-block">Her står der så noget andet, også med småt, som giver noget mere info om whatever. Ingen læser det alligevel, men til gengæld er der links til luksus some ved siden af wauw.</p>
+            </ul>
+            <div></div>
+            <div></div>
+                <a href=https://www.instagram.com/ class="some-grid-item" id="footer-insta">Insta</a>
+                <a href =https://www.twitter.com/ class="some-grid-item" id="footer-twitter">Twitter</a>
+        </section>
 </body>
 
 </html>
